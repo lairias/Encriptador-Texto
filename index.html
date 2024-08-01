@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/style/normalize.css">
+    <link rel="stylesheet" href="./asset/style/style.css">
+
+</head>
+
+<body>
+    <header class="header contaniner-m">
+        <div class="header_nav">
+            <div class="header_nav-titulo">
+                <h1 id="titulo_encriptador">Encriptador</h1>
+            </div>
+            <nav class="header_nav-links">
+                <div class="header_nav-btn" href="">
+                    <div class="header_nav-btn-text">Alura</div>
+                </div>
+                <div class="header_nav-btn" href="">
+                    <div class="header_nav-btn-text">Nosotros</div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main class="contenido_principal ">
+        <div class="contenido_principal-titulo">
+            <section class="">
+                <h1 class="titulo_principal">
+                    <span class="contenido_principal-titulo" value="ENCRIPTADOR DE" id="texto-encriptado1">ENCRIPTADOR
+                        DE TEXTO</span>
+                </h1>
+            </section>
+            <section class="contaniner-x contenido_secundario">
+                <h2>
+                    <span data-value="No esperes más para proteger tu" class="texto-style-hack1">No esperes más para
+                        proteger tu</span>
+                    <span data-value="información en línea." class="texto-style-hack">
+                        información en línea.
+                    </span>
+                </h2>
+            </section>
+        </div>
+        <div class="encriptador contaniner-m">
+            <div class="encriptador_cajas">
+                <div class="campo-encriptado">
+                    <textarea class="textarea1" placeholder="Ingrese texto aquí" id=""></textarea>
+                    <span class="span-encriptado">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-exclamation-circle-fill">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+                        </svg>
+                        Solo letras minúsculas y sin acentos</span>
+                    <div class="group-btn">
+                        <button class="btn-encriptar">Encriptar</button>
+                        <button class="btn-desencriptar">Desencritar</button>
+                    </div>
+                </div>
+                <div class="campo-desencriptado">
+                    <div class="img-area">
+                        <img class="imagen-area" src="./asset//img//Screenshot 2024-07-30 192302.png" alt="">
+                        <div class="texto-img">
+                            <strong class="strong">Ningún mensaje fue encontrado</strong>
+                            <span class="span">Ingresa el texto que desees encriptar o desencriptar.</span>
+
+                        </div>
+                    </div>
+                    <textarea class="textarea2" name="" id=""></textarea>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+<script type="module">
+    import { Pane } from './asset/js/tweakpane-4.0.4.min.js';
+    const ctrl = new Pane({
+        title: "Config",
+        expanded: true
+    });
+</script>
+<script src="asset/js/main.js"></script>
+
+</html>
