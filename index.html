@@ -14,17 +14,32 @@
 </head>
 
 <body>
-    <header class="header contaniner-m">
+    <header class="header">
         <div class="header_nav">
             <div class="header_nav-titulo">
                 <h1 id="titulo_encriptador">Encriptador</h1>
             </div>
             <nav class="header_nav-links">
                 <div class="header_nav-btn" href="">
-                    <div class="header_nav-btn-text">Alura</div>
+                    <a href="https://www.aluracursos.com/">
+                        <div href="" class="header_nav-btn-text">
+                            Alura
+                        </div>
+                    </a>
                 </div>
                 <div class="header_nav-btn" href="">
-                    <div class="header_nav-btn-text">Nosotros</div>
+                    <a href="https://www.github.com/lairias">
+                        <div href="" class="header_nav-btn-text">
+                            Github
+                        </div>
+                    </a>
+                </div>
+                <div class="header_nav-btn" href="">
+                    <a href="https://app.netlify.com/teams/lairias/sites">
+                        <div href="" class="header_nav-btn-text">
+                            Netlify
+                        </div>
+                    </a>
                 </div>
             </nav>
         </div>
@@ -53,7 +68,8 @@
         <div class="encriptador contaniner-m">
             <div class="encriptador_cajas">
                 <div class="campo-encriptado">
-                    <textarea class="textarea1" placeholder="Ingrese texto aquí" id=""></textarea>
+
+                    <textarea class="textarea1" placeholder="Ingrese texto aquí" id="areaEncriptador"></textarea>
                     <span class="span-encriptado">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-exclamation-circle-fill">
@@ -62,12 +78,12 @@
                         </svg>
                         Solo letras minúsculas y sin acentos</span>
                     <div class="group-btn">
-                        <button class="btn-encriptar">Encriptar</button>
-                        <button class="btn-desencriptar">Desencritar</button>
+                        <button type="submit" id="SentEncritar" class="btn-encriptar">Encriptar</button>
+                        <button class="btn-desencriptar" id="SentDesencriptar">Desencritar</button>
                     </div>
                 </div>
                 <div class="campo-desencriptado">
-                    <div class="img-area">
+                    <div class="img-area" id="Box-img">
                         <img class="imagen-area" src="./asset//img//Screenshot 2024-07-30 192302.png" alt="">
                         <div class="texto-img">
                             <strong class="strong">Ningún mensaje fue encontrado</strong>
@@ -75,7 +91,11 @@
 
                         </div>
                     </div>
-                    <textarea class="textarea2" name="" id=""></textarea>
+                    <textarea class="textarea2" id="areaDesencriptador" name="" id=""></textarea>
+                    <div class="campo-copiar-desencriptado">
+                        <button class="btn-desencriptar ocultar" id="CopiarDesencriptado">Copiar</button>
+
+                    </div>
                 </div>
             </div>
 
@@ -84,13 +104,18 @@
     <footer></footer>
 </body>
 
-<script type="module">
+
+<!-- <script type="module">
     import { Pane } from './asset/js/tweakpane-4.0.4.min.js';
     const ctrl = new Pane({
         title: "Config",
         expanded: true
     });
-</script>
+</script> -->
 <script src="asset/js/main.js"></script>
+<script src="asset/js/text-hack.js"></script>
+
+
+
 
 </html>

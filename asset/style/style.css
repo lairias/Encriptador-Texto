@@ -12,9 +12,15 @@
 *::before,
 *::after {
     box-sizing: inherit;
+
+}
+
+a {
+    text-decoration: none;
 }
 
 html {
+    width: auto;
     font-size: 62.5%;
     line-height: 1.15;
     box-sizing: border-box;
@@ -147,16 +153,23 @@ span.contenido_principal-titulo {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .campo-desencriptado {
     flex-basis: 30rem;
 }
 
+.campo-copiar-desencriptado {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 textarea {
-    height: 60rem;
+    height: 50rem;
     width: 300px;
     border-radius: 15px;
 
@@ -166,6 +179,8 @@ textarea {
     position: relative;
     box-shadow: 0 3px 24px rgb(0 0 0 / 0.2);
     border: none;
+    font-size: 3.2rem;
+    font-weight: 400;
 }
 
 .textarea1 {
@@ -196,7 +211,6 @@ textarea {
     height: 60%;
     background-repeat: no-repeat;
     background-size: auto;
-    /* visibility: hidden; */
 }
 
 .texto-img {
@@ -254,7 +268,17 @@ textarea {
     background-color: var(--color-btn-secundario);
 }
 
-@media (max-width:768px) {
+.campo-encriptado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ocultar {
+    visibility: hidden;
+}
+
+@media (max-width:900px) {
 
     .campo-encriptado {
         max-width: 550px;
@@ -294,4 +318,25 @@ textarea {
     .imagen-area {
         visibility: hidden;
     }
+
+    .textarea1 {
+        width: 100%;
+    }
+}
+
+
+@media (max-width:480px) {
+    .group-btn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .span-encriptado {
+        justify-content: center;
+    }
+
+    textarea {
+        width: 380px;
+    }
+
 }
